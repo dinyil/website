@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team</title>
+    <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        p {
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .topnav {
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            text-align: center;
+        }
+        .topnav a {
+            color: #2575fc;
+            font-size: 18px;
+            margin: 0 20px;
+            text-decoration: none;
+            position: relative;
+        }
+        .topnav a:before {
+            content: "";
+            position: absolute;
+            width: 84%;
+            height: 2px;
+            bottom: -3px;
+            left: 8%;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+        }
+        .topnav a:hover:before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+        section {
+            padding: 30px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease-out;
+        }
+        section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .person-text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .person img {
+            max-width: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+        }
+        .person h2 {
+            color: #6a11cb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #f8f9fa;
+            color: #6a11cb;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meet the Team</h1>
+</header>
+
+<div class="topnav">
+    <a href="#person1">Megan</a>
+    <a href="#person2">Sean</a>
+    <a href="#person3">Sanya</a>
+    <a href="#person4">Xandra</a>
+    <a href="#person5">Aletheia</a>
+</div>
+
+<section id="person1" class="person">
+    <div class="person-text">
+        <h2>Megan Paula S. Delos Reyes</h2>
+        <p>Hello, my name is Megan Paula S. Delos Reyes. I am 14 years old and was born on May 22, 2010. I grew up with 2 siblings, one older brother and one younger sister. I have five pets: three shih tzus and two American bullies. I study at the Holy Angel School of Caloocan and I'm in 8th Grade, section Acts. My journey at the school has been fun and challenging. There are times of sadness, anger, and disappointment, but I know they are all part of the journey.</p>
+    </div>
+    <img src="1.jpg" alt="Megan" style="height: 150px; width: 150px;">
+</section>
+
+<section id="person2" class="person">
+    <div class="person-text">
+        <h2>Sean Daniel J. Pascual</h2>
+        <p>Hello, I am Sean Daniel J. Pascual. I was born on August 6, 2011. Ever since I was young, I’ve loved dancing and singing to music, which has made me more connected to the music industry. These days, I’m more into singing and acting. One of my dream goals is to star in a popular musical, connecting my love for music and acting. My personality is ESFJ, which makes me an extrovert. I am very caring and enjoy spending time with my friends, who make school a wonderful experience.</p>
+    </div>
+    <img src="2.jpg" alt="Sean" style="height: 150px; width: 150px;">
+</section>
+
+<section id="person3" class="person">
+    <div class="person-text">
+        <h2>Sanya Manlangit</h2>
+        <p>My name is Sanya, but my family calls me Nya. I’m 13 years old and in the 8th grade. I grew up with 2 siblings and live in Caloocan City. I like being alone and cleaning. My favorite hobbies are playing badminton and video games. I have 2 cats and a pet bunny. Despite having pets and siblings, I’ve felt lonely in the past because I lacked friends, but now that I have friends, I’m happy.</p>
+    </div>
+    <img src="3.jpg" alt="Sanya" style="height: 150px; width: 150px;">
+</section>
+
+<section id="person4" class="person">
+    <div class="person-text">
+        <h2>Xandra Alex P. Calma</h2>
+        <p>Hi! My name is Xandra Alex P. Calma. I am 13 years old and was born on March 13, 2011. I am an extrovert, expressive, and hyper. My hobbies include playing badminton and collecting figurines. Music is a big part of my life, and I enjoy listening to bands like Wave to Earth and Wolf Hotel. I also love my family and friends, who are my happy pill and make every moment worthwhile.</p>
+    </div>
+    <img src="4.jpg" alt="Xandra" style="height: 150px; width: 150px;">
+</section>
+
+<section id="person5" class="person">
+    <div class="person-text">
+        <h2>Aletheia Miracle R. Canon</h2>
+        <p>Hello! My name is Aletheia Miracle R. Canon. I was born on June 3, 2011, in the Philippines. I love writing, which allows me to express myself, and my favorite subject is science. Music plays a big role in my life, especially soothing tunes. My favorite dish is Bicol Express, and I love grapes for their sweet flavor. I cherish quiet, comforting moments and finding beauty in simplicity.</p>
+    </div>
+    <img src="5.jpg" alt="Aletheia" style="height: 150px; width: 150px;">
+</section>
+
+<footer>
+    <p>&copy; Computer Project Canon, Pascual, DelosReyes, Manlangit, Calma  8 - ACTS</p>
+</footer>
+
+<script>
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+
+</body>
+</html>
